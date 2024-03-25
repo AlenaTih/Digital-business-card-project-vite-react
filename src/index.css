@@ -1,0 +1,260 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+  background-color: #23252C;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* place-items: center; */
+  min-height: 100vh;
+  /* min-width: 320px; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography and icons */
+
+.info-top h1 {
+  font-size: 1.5625rem; /* 25px */
+}
+
+.info-top h2 {
+  color: #F3BF99;
+  font-size: 1.125rem;
+  margin-top: 0;
+}
+
+.about-container h2,
+.interests-container h2 {
+  font-size: 1.25rem;
+  color: #F0D8CB;
+  margin-bottom: 0;
+}
+
+.interests-container h2 {
+  margin-top: 0;
+}
+
+p {
+  text-wrap: balance;
+}
+
+.about-container p,
+.interests-container p {
+  line-height: 1.5em;
+  width: 100%;
+  margin-top: 1.5em;
+  white-space: pre-line;
+}
+
+.interests-container p:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.about-container p:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.button-link i {
+  margin-right: 0.5em;
+}
+
+.fa-square-x-twitter,
+.fa-square-youtube,
+.fa-instagram,
+.fa-square-github {
+  color: #918E9B;
+  font-size: 1.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.fa-square-x-twitter:hover,
+.fa-square-youtube:hover,
+.fa-instagram:hover,
+.fa-square-github:hover {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+/* Layout */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1A1B21;
+  width: 100%;
+  /* width: 318px; */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  padding: 0;
+  margin: 2.5em auto;
+  border-radius: 0.5em;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-top,
+.info-links,
+.about-container,
+.interests-container,
+.footer-container {
+  width: 100%;
+  padding: 0 2.5em;
+}
+
+.info-top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.info-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.0625em; /* 17px */
+  margin-top: 1.4em;
+}
+
+.button-count-container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 2em 0 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.4em;
+}
+
+.interests-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.125em;
+}
+
+.about-container,
+.interests-container {
+  text-align: start;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161619;
+  gap: 1.5em;
+  width: 100%;
+  padding: 3em 4.5em;
+  margin-top: 2.5em;
+}
+
+/* Buttons */
+
+/* Images */
+
+.main-photo {
+  width: 100%;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+/* Links */
+
+.website-link {
+  color: #F7EFE2;
+}
+
+.button-link {
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  /* background-color: #f9f9f9; */
+  /* background-color: #1a1a1a; */
+  padding: 0.6em 1.125em;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 0.5em;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.email-link {
+  color: #1A1B21;
+  background-color: whitesmoke;
+}
+
+.linkedin-link {
+  color: whitesmoke;
+  background-color: #5093E2;
+}
+
+.email-link:hover {
+  border-color: #646cff;
+}
+
+.linkedin-link:hover {
+  border-color: whitesmoke;
+}
+
+.button-link:focus,
+.button-link:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Media queries */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  } */
+
+  /* a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  } */
+
+/* } */
+
+/* @media (width >= 600px) */
+@media (min-width: 600px) {
+  /* Layout */
+
+  .container {
+    width: 35%;
+  }
+
+  /* Links */
+
+  .button-link {
+    font-size: 1rem;
+  }
+
+}
