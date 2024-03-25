@@ -10,6 +10,9 @@
   /* background-color: #242424; */
   background-color: #23252C;
 
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
